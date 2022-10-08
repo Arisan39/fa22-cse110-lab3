@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
-    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header>
@@ -97,9 +97,9 @@
     
         <section>
             <h2> Meeting Comment Form</h2>
-            <form action="">
+            <form>
                 <fieldset>
-                    <label for="commenter">Post as:</label>
+                    <h3>Post as:</h3>
                     <br>
                     <input type="radio" id="anon" name="commenter">
                     <label for="anon"> Anonymous </label>
@@ -110,7 +110,7 @@
                     <br><br>
                     <label for="comment-box"> Comment: </label>
                     <br>
-                    <textarea id="comment" name="comment-box" rows="4" cols="50">Add comment (post now or set post time in advance settings!)</textarea>
+                    <textarea id="comment-box" name="comment-box" rows="4" cols="50">Add comment (post now or set post time in advance settings!)</textarea>
                     <br>
                     <button type="button" onclick="">Submit</button>
                     <br><br>
@@ -129,7 +129,7 @@
                         <label for="delay-date"> Delay post time to date: </label>
                         <input type="date" id="post-date" name="post-date">
                         <br>
-                        <input type="checkbox" id="choice" name="want-copy" value="confirmation">
+                        <input type="checkbox" id="want-copy" name="want-copy" value="confirmation">
                         <label for="want-copy"> Want copy of comment? </label>
                         <label for="send-options"> via: </label>
                         <select name="send-options" id="send-options">

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div style="background-color: #AAF0C1;">
+            <h1> Pomodoro Timer First Brainstorm </h1>
+            <p> <span style="background-color: #3EB489;">Meeting Topic :</span>  Brainstorming </p>
+            <p> <span style="background-color: #3EB489;">Date :</span> 10/6/2022 </p>
+        </div>
+        <nav> 
+            <a href="https://docs.google.com/document/d/1RK0GfGt7xOsZvmGSOt1pRSoXAtHS5tzn9_hWe6cXDbE/edit?usp=sharing"> Last Week's Meeting Minutes</a> |
+            <a href="https://docs.google.com/document/d/11ez2BUUEhkUKlXAILPm4Gtb1ToVae1CL5cPZFEKHk2s/edit?usp=sharing"> Meeting check-in link </a>
+        </nav>
+    </header>
+
+    <main>
+        <hr>
+
+        <h2> Attendance List: </h2>
+        <ol>
+            <li> Spongebob Squarepants </li>
+            <li> Paddy Patrick </li>
+            <li> Sally Sully </li>
+            <li> Timothe Tim </li>
+            <li> Jamie Crooker </li> 
+        </ol>
+        <h3>Total Attendence: 5</h3>
+
+        <hr>
+
+        <section>
+            <h2> Agenda </h2>
+            <ul>
+                <li> design the web page elements
+                    <ul>
+                        <li> color theme </li>
+                        <li> UI/UX </li>
+                    </ul>
+                </li>
+                <li> discuss important features 
+                    <ul>
+                        <li> timer </li>
+                        <li> button </li>
+                        <li> discuss if we should consider <strong>feature scalability</strong> </li>
+                    </ul>
+                </li>
+                <li> create task list for developers 
+                    <ul>
+                        <li> identify which task are needed for <em>prototype</em> and which tasks can be <em>saved for later</em></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> Last Week's Unfinished Tasks </h2>
+            <ul> 
+                <li> team self introduction <b>(some people were absence)</b></li>
+                <li> alert everyone to fill out avalibility sheet</li>
+                <li> assign <i>meeting notetaker </i></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> New Business Needed to be Mentioned</h2>
+            <p> look at agenda </p>
+        </section>
+
+        <section>
+            <h2> Meeting Materials</h2>
+            <details>
+                <summary> Meeting Flow Chart </summary>
+                <img src="media/2-How-to-decide-if-you-need-a-flowchart.jpg" alt="flowchart meme" width="600" height="500">
+            </details>
+            <details>
+                <summary> Meeting Audio Clip</summary>
+                <audio controls muted>
+                    <source src="media/surpise.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </details>
+            <details>
+                <summary> Meeting Video</summary>
+                <video width="320" height="240" controls>
+                    <source src="media/pexels-cottonbro-6865077.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </details>
+        </section>
+    
+        <section>
+            <h2> Meeting Comment Form</h2>
+            <form action="">
+                <fieldset>
+                    <label for="commenter">Post as:</label>
+                    <br>
+                    <input type="radio" id="anon" name="commenter">
+                    <label for="anon"> Anonymous </label>
+                    <br>
+                    <input type="radio" id="poster" name="commenter">
+                    <label for="poster"> Name: </label>
+                    <input type="text" id="fullname" name="fullname">
+                    <br><br>
+                    <label for="comment-box"> Comment: </label>
+                    <br>
+                    <textarea id="comment" name="comment-box" rows="4" cols="50">Add comment (post now or set post time in advance settings!)</textarea>
+                    <br>
+                    <button type="button" onclick="">Submit</button>
+                    <br><br>
+                    <details>
+                        <summary>Advance Settings</summary>
+                        <input type="radio" id="delay-time" name="delay-time">
+                        <label for="delay-time"> Delay post time by: </label>
+                        <input list="time-options" name="time-option" id="time-option">
+                        <datalist id="time-options">
+                            <option value="30 mins">
+                            <option value="1 hr">
+                            <option value="1 day">
+                        </datalist>
+                        <br>
+                        <input type="radio" id="delay-date" name="delay-date">
+                        <label for="delay-date"> Delay post time to date: </label>
+                        <input type="date" id="post-date" name="post-date">
+                        <br>
+                        <input type="checkbox" id="choice" name="want-copy" value="confirmation">
+                        <label for="want-copy"> Want copy of comment? </label>
+                        <label for="send-options"> via: </label>
+                        <select name="send-options" id="send-options">
+                            <option value="email"> Email</option>
+                            <option value="text"> Text </option>
+                        </select>
+                        <br>
+                        <button type="button" onclick="">Save</button>
+                        <br>
+                    </details>
+                </fieldset>
+            </form>
+        </section>
+        
+        
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

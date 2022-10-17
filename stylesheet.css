@@ -71,4 +71,5 @@ fieldset span h3~span{
 
 hr+section{
     background-color: cyan;
+    display: grid;
 }

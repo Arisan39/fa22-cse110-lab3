@@ -13,10 +13,10 @@
 </head>
 <body>
     <header>
-        <div style="background-color: #AAF0C1;">
+        <div>
             <h1> Pomodoro Timer First Brainstorm </h1>
-            <p> <span style="background-color: #3EB489;">Meeting Topic :</span>  Brainstorming </p>
-            <p> <span style="background-color: #3EB489;">Date :</span> 10/6/2022 </p>
+            <p> <span class="header-topic">Meeting Topic :</span>  Brainstorming </p>
+            <p> <span class="header-topic">Date :</span> 10/6/2022 </p>
         </div>
         <nav> 
             <a href="https://docs.google.com/document/d/1RK0GfGt7xOsZvmGSOt1pRSoXAtHS5tzn9_hWe6cXDbE/edit?usp=sharing"> Last Week's Meeting Minutes</a> |
@@ -77,41 +77,47 @@
             <p> look at agenda </p>
         </section>
 
-        <section>
+        <section class="content">
             <h2> Meeting Materials</h2>
             <details>
                 <summary> Meeting Flow Chart </summary>
-                <img src="media/2-How-to-decide-if-you-need-a-flowchart.jpg" alt="flowchart meme" width="600" height="500">
+                <img id="flowchart-pic" src="media/2-How-to-decide-if-you-need-a-flowchart.jpg" alt="flowchart meme">
             </details>
             <details>
                 <summary> Meeting Audio Clip</summary>
-                <audio controls muted>
+                <audio id="meeting-audio" controls muted>
                     <source src="media/surpise.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </details>
             <details>
                 <summary> Meeting Video</summary>
-                <video width="320" height="240" controls>
+                <video id="meeting-vid" width="320" height="240" controls>
                     <source src="media/pexels-cottonbro-6865077.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
             </details>
         </section>
     
-        <section>
+        <section class="comment">
             <h2> Meeting Comment Form</h2>
             <form>
                 <fieldset>
-                    <h3>Post as:</h3>
-                    <br>
-                    <input type="radio" id="anon" name="commenter">
-                    <label for="anon"> Anonymous </label>
-                    <br>
-                    <input type="radio" id="poster" name="commenter">
-                    <label for="poster"> Name: </label>
-                    <input type="text" id="fullname" name="fullname">
-                    <br><br>
+                    <span>
+                        <h3>Post as:</h3>
+                        <span>
+                            <br>
+                            <input type="radio" id="anon" name="commenter">
+                            <label for="anon"> Anonymous </label>
+                            <br>
+                        </span>
+                        <span>
+                            <input type="radio" id="poster" name="commenter">
+                            <label for="poster"> Name: </label>
+                            <input type="text" id="fullname" name="fullname">
+                            <br><br>
+                        </span>
+                    </span>
                     <label for="comment-box"> Comment: </label>
                     <br>
                     <textarea id="comment-box" name="comment-box" rows="4" cols="50">Add comment (post now or set post time in advance settings!)</textarea>

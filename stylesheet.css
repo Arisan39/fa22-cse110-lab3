@@ -1,7 +1,74 @@
 * {
     font-family: "Assistant";
+    margin: 5px;
 }
 
 header {
     background-color: #AAF0C1;
+    margin: 3em;
+    padding: 3vw;
+    padding-bottom: 3vw;
+    position: sticky;
+}
+
+/*style for topics in header*/
+.header-topic{
+    background-color: rgb(62,180,137);
+    text-decoration: underline;
+    text-decoration-thickness: 20%;
+}
+
+/* style for header link*/
+a:link, a:visited{
+    color: green;
+}
+a:hover, a:active{
+    color: hsl(78, 171%, 76%);
+}
+
+header div h1{
+    text-align: center;
+}
+
+footer > p {
+    margin: auto;
+    position: relative;
+}
+
+#comment-box{
+    margin-left: 5mm;
+    padding: 5vh;
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        background-color: honeydew;
+    }
+}
+
+@media (max-width: 700px){
+    .comment, .content{
+        flex-direction: column;
+    }
+}
+
+fieldset{
+    border-style: dashed;
+    border-color: #AAF0C1;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+#flowchart-pic{
+    width: 600px;
+    height:500px;
+}
+
+fieldset span h3~span{
+   display: flex;
+   flex-direction: row; 
+}
+
+hr+section{
+    background-color: cyan;
 }
